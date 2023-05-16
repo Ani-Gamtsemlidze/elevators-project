@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./ფონტები/Helvetica-Bold.woff2") format("woff2"),
+    url("./ფონტები/Helvetica-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BPG WEB 001 Caps";
+  src: url("../fonts/bpg-web-001-caps-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-web-001-caps-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-web-001-caps-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/bpg-web-001-caps-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/bpg-web-001-caps-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-web-001-caps-webfont.svg#bpg_web_001_capsregular")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "BPG WEB 001 Caps";
+  src: url(../fonts/bpg-web-001-caps-webfont.eot);
+  src: url(../fonts/bpg-web-001-caps-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/bpg-web-001-caps-webfont.woff2) format("woff2"),
+    url(../fonts/bpg-web-001-caps-webfont.woff) format("woff"),
+    url(../fonts/bpg-web-001-caps-webfont.ttf) format("truetype"),
+    url(../fonts/bpg-web-001-caps-webfont.svg#bpg_web_001_capsregular)
+      format("svg");
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+.main-logo {
+  max-width: 56px;
+  width: 100%;
+  height: 53px;
+  margin-left: 60px;
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navigation-bar {
+  padding: 30px 50px 0;
+
+  ul {
+    li {
+      position: relative;
+      display: inline;
+      padding: 20px;
+      .arrow {
+        position: absolute;
+        top: 27px;
+        right: -2px;
+        transform: translateX(-8px);
+        cursor: pointer;
+      }
+      a {
+        font-size: 16px;
+        font-family: "Helvetica";
+        text-decoration: none;
+        color: #232628;
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-radius: 14px;
+          background-color: #862a2a;
+          display: inline-block;
+          z-index: 1;
+          position: absolute;
+          top: 50px;
+          left: 18%;
+          transform: translateX(-4%);
+        }
+        &:hover::after {
+          width: 70%;
+          height: 2px;
+        }
+      }
+    }
+  }
+}
+.main-container {
+  position: relative;
+  background-image: url(./ფოტოები/cover.png);
+  max-width: 1227px;
+  width: 100%;
+  height: 700px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-page-text {
+  top: 12%;
+  position: absolute;
+  transform: translateY(50px);
+  left: 6%;
+}
+.main-heading {
+  max-width: 788px;
+  width: 100%;
+  h2 {
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    // line-height: 56px;
+  }
+}
+.heading-paragraph {
+  max-width: 449px;
+  width: 100%;
+  margin-top: 24px;
+  p {
+    font-size: 16px;
+    line-height: 27px;
+    font-family: "Helvetica";
+    color: #232628;
+  }
+}
+.heading-span {
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #475569;
+  }
+  img {
+    max-width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
