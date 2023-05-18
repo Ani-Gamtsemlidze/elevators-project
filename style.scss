@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Helvetica";
 }
+
 @font-face {
   font-family: "Helvetica";
   src: url("./ფონტები/Helvetica-Bold.woff2") format("woff2"),
@@ -39,15 +40,34 @@
       format("svg");
 }
 
+// @font-face {
+//   font-family: "Helvetica";
+//   src: url("Helvetica.woff2") format("woff2"),
+//     url("Helvetica.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+$web-font: "BPG WEB 001 Caps", sans-serif;
+$helvetica-font: "Helvetica";
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   align-items: center;
+  padding: 0 0 0 60px;
 }
 .main-logo {
   max-width: 56px;
   width: 100%;
-  height: 53px;
-  margin-left: 60px;
+  height: 77px;
   img {
     object-fit: contain;
     width: 100%;
@@ -56,41 +76,61 @@ header {
 }
 
 .navigation-bar {
-  padding: 30px 50px 0;
-
+  margin-top: 30px;
+  margin-left: 80px;
   ul {
     li {
       position: relative;
       display: inline;
-      padding: 20px;
-      .arrow {
-        position: absolute;
-        top: 27px;
-        right: -2px;
-        transform: translateX(-8px);
-        cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 40px;
       }
+      // .arrow {
+      //   position: absolute;
+      //   top: 27px;
+      //   right: -2px;
+      //   transform: translateX(-8px);
+      //   cursor: pointer;
+      // }
       a {
         font-size: 16px;
-        font-family: "Helvetica";
+        font-family: $helvetica-font;
         text-decoration: none;
         color: #232628;
+        position: relative;
         &::after {
           content: "";
-          width: 0;
-          height: 0;
+          width: 100%;
+          height: 2px;
           border-radius: 14px;
-          background-color: #862a2a;
+          background-color: #f86b05;
           display: inline-block;
           z-index: 1;
           position: absolute;
-          top: 50px;
-          left: 18%;
-          transform: translateX(-4%);
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%) translateY(10px);
+          opacity: 0;
+          transition: 0.3s ease;
         }
         &:hover::after {
-          width: 70%;
-          height: 2px;
+          transform: translateX(-50%) translateY(0);
+          opacity: 1;
+        }
+      }
+      .service-arrow-image {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url(./ფოტოები/arrow.svg);
+          right: -13px;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }
@@ -99,25 +139,21 @@ header {
 .main-container {
   position: relative;
   background-image: url(./ფოტოები/cover.png);
-  max-width: 1227px;
   width: 100%;
-  height: 700px;
+  height: calc(100vh - 77px);
   background-position: center;
   background-repeat: no-repeat;
-}
-.main-page-text {
-  top: 12%;
-  position: absolute;
-  transform: translateY(50px);
-  left: 6%;
+  background-size: cover;
+  padding: 7% 0 0 60px;
 }
 .main-heading {
   max-width: 788px;
   width: 100%;
+  color: #232628;
   h2 {
-    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-family: $web-font;
     font-size: 56px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 56px;
   }
 }
@@ -128,8 +164,9 @@ header {
   p {
     font-size: 16px;
     line-height: 27px;
-    font-family: "Helvetica";
+    font-family: $helvetica-font;
     color: #232628;
+    font-weight: 300;
   }
 }
 .heading-span {
@@ -141,12 +178,14 @@ header {
     line-height: 18px;
     color: #475569;
   }
-  img {
-    max-width: 24px;
-    height: 24px;
-    object-fit: contain;
+  .info-arrow {
+    border: 1px solid #475569;
+    border-radius: 50%;
+    padding: 4px 9px 7px 10px;
     margin-left: 10px;
     cursor: pointer;
+    img {
+    }
   }
 }
 .social-media-icons {
@@ -180,8 +219,9 @@ header {
   h2 {
     font-size: 56px;
     font-weight: 400;
-    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-family: $web-font;
     border-bottom: 1px solid #f86b05;
+    color: #232628;
   }
 }
 .about-content {
@@ -192,5 +232,171 @@ header {
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
+    color: #000;
   }
 }
+
+.service-heading {
+  margin: 120px 0 24px;
+
+  h2 {
+    font-size: 56px;
+    font-weight: 400;
+    color: #232628;
+    text-align: center;
+    font-family: $web-font;
+  }
+}
+
+.service-part1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+  .service {
+    position: relative;
+    max-width: 49%;
+    width: 100%;
+    background-color: #f2f5fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    cursor: pointer;
+    img {
+      width: 290px;
+      height: 240px;
+      object-fit: cover;
+      position: relative;
+      transition: 0.3s ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 290px;
+      height: 240px;
+      background-color: #475569;
+      opacity: 0;
+      right: 0;
+      transform: translateY(0);
+    }
+    &:hover::after {
+      opacity: 0.6;
+    }
+    .install-text {
+      max-width: 125px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      h2 {
+        font-family: $web-font;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #232628;
+        border-bottom: 1px solid #f86b05;
+        transition: 0.3s ease;
+      }
+      // .card-text-heading {
+      //   color: #232628;
+      // }
+    }
+    &:hover {
+      background-color: #475569;
+    }
+    &:hover h2 {
+      // background-color: #475569;
+      color: #fff;
+    }
+  }
+}
+// .elevator-install {
+//   background-color: #475569;
+// }
+// .card-system-install {
+//   background-color: #f2f5fa;
+// }
+
+.contact-heading {
+  margin: 120px 0 50px;
+  h2 {
+    font-size: 56px;
+    font-family: $web-font;
+    color: #232628;
+    text-align: center;
+  }
+}
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  background-color: #f2f5fa;
+}
+.contact-info {
+  .contact {
+    padding: 12px 108px;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  span {
+    margin-left: 10px;
+    color: #232628;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+// .service-heading {
+//   padding-top: 70px;
+//   h2 {
+//     text-align: center;
+//     font-size: 56px;
+//     color: #232628;
+//     font-family: $web-font;
+//     font-weight: 400;
+//   }
+// }
+// .services {
+//   display: flex;
+//   justify-content: space-evenly;
+//   max-width: 1126px;
+//   width: 100%;
+// }
+// .service {
+//   // background-image: url(./ფოტოები/service-images/image\ 2.svg);
+//   background-color: #475569;
+//   display: flex;
+//   align-items: center;
+//   margin: 50px;
+//   justify-content: space-between;
+//   //   padding: 100px;
+//   // background-repeat: no-repeat;
+//   // background-position: right;
+//   max-width: 590px;
+//   width: 100%;
+
+//   .install-text {
+//     max-width: 125px;
+//     margin: 0 auto;
+//     // padding: 98px 95px 95px 90px;
+//     h2 {
+//       font-family: $web-font;
+//       font-size: 24px;
+//       font-weight: 400;
+//       color: #ffffff;
+//       border-bottom: 1px solid #f86b05;
+//     }
+//   }
+// }
+// .card-install {
+//   background-color: #f2f5fa;
+//   .install-text {
+//     h2 {
+//       color: black;
+//     }
+//   }
+// }

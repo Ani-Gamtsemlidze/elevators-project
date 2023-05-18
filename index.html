@@ -10,26 +10,22 @@
   </head>
   <body>
     <div class="elevator-page">
-      <header id="home">
+      <header class="container">
         <div class="main-logo">
-          <img src="./ფოტოები/logo.png" />
+          <img src="./ფოტოები/logo.svg" />
         </div>
         <div class="navigation-bar">
           <ul>
             <li><a href="#home">მთავარი</a></li>
             <li><a href="#about-us">ჩვენს შესახებ</a></li>
             <li>
-              <a href="#">სერვისები</a>
-              <img class="arrow" src="./ფოტოები/Vector-arrow.png" />
+              <a class="service-arrow-image" href="#">სერვისები</a>
             </li>
-            <!-- <div class="services-arrow">
-            <img class="arrow" src="./ფოტოები/Vector-arrow.png" />
-          </div> -->
             <li><a href="#">კონტაქტი</a></li>
           </ul>
         </div>
       </header>
-      <section class="main-container">
+      <section class="main-container container">
         <div class="main-page-text">
           <div class="main-heading">
             <h2>ხარისხი და უსაფრთხოება ჩვენი პრიორიტეტია</h2>
@@ -41,17 +37,16 @@
           </div>
           <div class="heading-span">
             <span>გაეცანით დამატებით ინფორმაციას</span>
-            <img src="./ფოტოები/down.png" />
+            <div class="info-arrow">
+              <img src="./ფოტოები/arrow.svg" />
+            </div>
           </div>
           <div class="social-media-icons">
             <a href="#">
-              <img class="facebook-icon" src="./ფოტოები/Vector.png" />
+              <img class="facebook-icon" src="./ფოტოები/Facebook-Vector.svg" />
             </a>
             <a href="#">
-              <img
-                class="whatsapp-icon"
-                src="./ფოტოები/ic_baseline-whatsapp.png"
-              />
+              <img class="whatsapp-icon" src="./ფოტოები/whatsapp-Vector.svg" />
             </a>
           </div>
         </div>
@@ -72,6 +67,117 @@
           </p>
         </div>
       </section>
+      <section class="services-list container">
+        <div class="service-heading">
+          <h2>სერვისები</h2>
+        </div>
+        <div class="service-part1">
+          <div class="service elevator-install">
+            <div class="install-text">
+              <h2>ლიფტების მონტაჟი</h2>
+            </div>
+            <!-- <div class="install-image"> -->
+            <img src="./ფოტოები/service-images/install-elevator.png" />
+            <!-- </div> -->
+          </div>
+          <div class="service card-system-install">
+            <div class="card-text install-text">
+              <h2 class="card-text-heading">ლიფტების მომსახურება</h2>
+            </div>
+            <!-- <div class="install-image"> -->
+            <img src="./ფოტოები/service-images/elevator-services.png" />
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="service-part1">
+          <div class="service elevator-install">
+            <div class="install-text">
+              <h2>საბარათე სისტემის დაყენება</h2>
+            </div>
+            <!-- <div class="install-image"> -->
+            <img src="./ფოტოები/service-images/card-image 7.png" />
+            <!-- </div> -->
+          </div>
+          <div class="service card-system-install">
+            <div class="install-text">
+              <h2 class="card-text-heading">ლიფტების მოდერნიზაცია</h2>
+            </div>
+            <!-- <div class="install-image"> -->
+            <img src="./ფოტოები/service-images/elevator-modern.png" />
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="contact-info-page container">
+        <div class="contact-heading">
+          <h2>კონტაქტი</h2>
+        </div>
+        <div class="contact-box">
+          <div class="contact-info">
+            <div class="contact number">
+              <a href="#">
+                <img src="./ფოტოები/contact-images/number.svg" />
+              </a>
+              <span>598 123 456</span>
+            </div>
+            <div class="contact whatsapp">
+              <a href="#">
+                <img src="./ფოტოები/contact-images/whatsapp.svg" />
+              </a>
+              <span>598 123 456 whatsapp</span>
+            </div>
+            <div class="contact mail">
+              <a href="#">
+                <img src="./ფოტოები/contact-images/mail.svg" />
+              </a>
+              <span>lift@gmail.com</span>
+            </div>
+            <div class="contact fb">
+              <a href="#">
+                <img src="./ფოტოები/contact-images/fb.svg" />
+              </a>
+              <span>fb/link</span>
+            </div>
+          </div>
+          <img src="./ფოტოები/contact-images/unsplash_SpVHcbuKi6E.svg" />
+        </div>
+      </section>
+
+      <!-- <section class="services-list-page">
+        <div class="service-heading">
+          <h2>სერვისები</h2>
+        </div>
+        <div class="services">
+          <div class="service-part1">
+            <div class="service elevator-install">
+              <div class="install-text">
+                <h2>ლიფტების მონტაჟი</h2>
+              </div>
+              <img src="./ფოტოები/service-images/image 2.svg" />
+            </div>
+            <div class="service card-install">
+              <div class="card-text install-text">
+                <h2 class="card-system-text">საბარათე სისტემის დაყენება</h2>
+              </div>
+              <img src="./ფოტოები/service-images/image 7.svg" />
+            </div>
+          </div>
+          <div class="service-part2">
+            <div class="service elevator-install">
+              <div class="install-text">
+                <h2>ლიფტების მომსახურება</h2>
+              </div>
+              <img src="./ფოტოები/service-images/image 4.svg" />
+            </div>
+            <div class="service card-install">
+              <div class="card-text install-text">
+                <h2 class="card-system-text">ლიფტების მოდერნიზაცია</h2>
+              </div>
+              <img src="./ფოტოები/service-images/unsplash_m01bajOe8E0.svg" />
+            </div>
+          </div>
+        </div>
+      </section> -->
     </div>
   </body>
 </html>
