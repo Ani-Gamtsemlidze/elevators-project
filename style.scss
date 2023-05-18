@@ -5,14 +5,14 @@
   font-family: "Helvetica";
 }
 
-@font-face {
-  font-family: "Helvetica";
-  src: url("./fonts/Helvetica.woff2") format("woff2"),
-    url("./fonts/Helvetica.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "Helvetica";
+//   src: url("./fonts/Helvetica.woff2") format("woff2"),
+//     url("./fonts/Helvetica.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
 @font-face {
   font-family: "BPG WEB 001 Caps";
@@ -41,8 +41,17 @@
       format("svg");
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.woff2") format("woff2"),
+    url("./fonts/Helvetica.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 $web-font: "BPG WEB 001 Caps", sans-serif;
-$helvetica-font: "Helvetica";
+// $helvetica-font: "Helvetica";
 
 .elevator-page {
   position: relative;
@@ -179,8 +188,6 @@ header {
     padding: 4px 9px 7px 10px;
     margin-left: 10px;
     cursor: pointer;
-    img {
-    }
   }
 }
 .social-media-icons {
@@ -367,8 +374,7 @@ header {
   margin: 0 50px;
   a {
     text-decoration: none;
-    color: #232628;
-    font-weight: 700;
+    color: #475569;
     display: block;
     padding: 7px 0;
   }
@@ -376,12 +382,12 @@ header {
 .service-footer {
   a {
     text-decoration: none;
-    color: #232628;
+    color: #475569;
     display: block;
     padding: 7px 0;
-    &:first-child {
-      font-weight: 700;
-    }
+    // &:first-child {
+    //   font-weight: 700;
+    // }
   }
 }
 .contact-footer {

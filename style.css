@@ -7,13 +7,6 @@
 }
 
 @font-face {
-  font-family: "Helvetica";
-  src: url("./fonts/Helvetica.woff2") format("woff2"), url("./fonts/Helvetica.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "BPG WEB 001 Caps";
   src: url("../fonts/bpg-web-001-caps-webfont.eot"); /* IE9 Compat Modes */
   src: url("../fonts/bpg-web-001-caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-web-001-caps-webfont.woff2") format("woff2"), url("../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("../fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-web-001-caps-webfont.svg#bpg_web_001_capsregular") format("svg"); /* Legacy iOS */
@@ -22,6 +15,13 @@
   font-family: "BPG WEB 001 Caps";
   src: url(../fonts/bpg-web-001-caps-webfont.eot);
   src: url(../fonts/bpg-web-001-caps-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bpg-web-001-caps-webfont.woff2) format("woff2"), url(../fonts/bpg-web-001-caps-webfont.woff) format("woff"), url(../fonts/bpg-web-001-caps-webfont.ttf) format("truetype"), url(../fonts/bpg-web-001-caps-webfont.svg#bpg_web_001_capsregular) format("svg");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.woff2") format("woff2"), url("./fonts/Helvetica.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .elevator-page {
   position: relative;
@@ -155,6 +155,7 @@ header {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .social-media-icons {
   margin-top: 50px;
   display: flex;
@@ -336,20 +337,16 @@ header {
 }
 .main-about a {
   text-decoration: none;
-  color: #232628;
-  font-weight: 700;
+  color: #475569;
   display: block;
   padding: 7px 0;
 }
 
 .service-footer a {
   text-decoration: none;
-  color: #232628;
+  color: #475569;
   display: block;
   padding: 7px 0;
-}
-.service-footer a:first-child {
-  font-weight: 700;
 }
 
 .contact-footer {
