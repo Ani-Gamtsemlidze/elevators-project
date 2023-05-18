@@ -7,12 +7,13 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url("./ფონტები/Helvetica-Bold.woff2") format("woff2"),
-    url("./ფონტები/Helvetica-Bold.woff") format("woff");
-  font-weight: bold;
+  src: url("./fonts/Helvetica.woff2") format("woff2"),
+    url("./fonts/Helvetica.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "BPG WEB 001 Caps";
   src: url("../fonts/bpg-web-001-caps-webfont.eot"); /* IE9 Compat Modes */
@@ -40,23 +41,19 @@
       format("svg");
 }
 
-// @font-face {
-//   font-family: "Helvetica";
-//   src: url("Helvetica.woff2") format("woff2"),
-//     url("Helvetica.woff") format("woff");
-//   font-weight: 500;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 $web-font: "BPG WEB 001 Caps", sans-serif;
 $helvetica-font: "Helvetica";
+
+.elevator-page {
+  position: relative;
+}
 
 .container {
   max-width: 1240px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -94,7 +91,6 @@ header {
       // }
       a {
         font-size: 16px;
-        font-family: $helvetica-font;
         text-decoration: none;
         color: #232628;
         position: relative;
@@ -144,7 +140,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 7% 0 0 60px;
+  padding: 7% 0 0 24px;
 }
 .main-heading {
   max-width: 788px;
@@ -164,7 +160,6 @@ header {
   p {
     font-size: 16px;
     line-height: 27px;
-    font-family: $helvetica-font;
     color: #232628;
     font-weight: 300;
   }
@@ -276,6 +271,7 @@ header {
       width: 290px;
       height: 240px;
       background-color: #475569;
+      transition: 0.3s ease;
       opacity: 0;
       right: 0;
       transform: translateY(0);
@@ -330,7 +326,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px;
+  margin: 50px 7px;
   background-color: #f2f5fa;
 }
 .contact-info {
@@ -341,6 +337,12 @@ header {
   }
   a {
     text-decoration: none;
+    display: flex;
+  }
+  .tele {
+    color: #232628;
+    /* margin: 0 32px; */
+    padding: 0 9px;
   }
   span {
     margin-left: 10px;
@@ -350,53 +352,75 @@ header {
   }
 }
 
-// .service-heading {
-//   padding-top: 70px;
-//   h2 {
-//     text-align: center;
-//     font-size: 56px;
-//     color: #232628;
-//     font-family: $web-font;
-//     font-weight: 400;
-//   }
-// }
-// .services {
-//   display: flex;
-//   justify-content: space-evenly;
-//   max-width: 1126px;
-//   width: 100%;
-// }
-// .service {
-//   // background-image: url(./ფოტოები/service-images/image\ 2.svg);
-//   background-color: #475569;
-//   display: flex;
-//   align-items: center;
-//   margin: 50px;
-//   justify-content: space-between;
-//   //   padding: 100px;
-//   // background-repeat: no-repeat;
-//   // background-position: right;
-//   max-width: 590px;
-//   width: 100%;
-
-//   .install-text {
-//     max-width: 125px;
-//     margin: 0 auto;
-//     // padding: 98px 95px 95px 90px;
-//     h2 {
-//       font-family: $web-font;
-//       font-size: 24px;
-//       font-weight: 400;
-//       color: #ffffff;
-//       border-bottom: 1px solid #f86b05;
-//     }
-//   }
-// }
-// .card-install {
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top: 1px solid #f2f5fa;
+  margin: 100px 60px 30px;
+  padding: 25px 0;
+}
+.footer-texts {
+  display: flex;
+}
+.main-about {
+  margin: 0 50px;
+  a {
+    text-decoration: none;
+    color: #232628;
+    font-weight: 700;
+    display: block;
+    padding: 7px 0;
+  }
+}
+.service-footer {
+  a {
+    text-decoration: none;
+    color: #232628;
+    display: block;
+    padding: 7px 0;
+    &:first-child {
+      font-weight: 700;
+    }
+  }
+}
+.contact-footer {
+  position: relative;
+  .contact {
+    // padding: 12px 0;
+    // display: flex;
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    a {
+      // margin-right: 10px;
+      text-decoration: none;
+      color: #475569;
+      display: flex;
+      margin-right: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+// .bottom-line {
+//   width: 1349px;
 //   background-color: #f2f5fa;
-//   .install-text {
-//     h2 {
-//       color: black;
-//     }
-//   }
+//   height: 1px;
+//   position: absolute;
+//   bottom: 0;
 // }
+
+.copy-text {
+  border-top: 1px solid #f2f5fa;
+  padding: 16px 102px;
+  span {
+    font-size: 12px;
+    color: #475569;
+    // .copy-sign {
+    //   border: 2px solid #475569;
+    //   border-radius: 50%;
+    // }
+  }
+}
