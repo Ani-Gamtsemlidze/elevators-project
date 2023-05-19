@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Helvetica";
 }
+html {
+  scroll-behavior: smooth;
+}
 
 // @font-face {
 //   font-family: "Helvetica";
@@ -162,20 +165,17 @@ header {
         }
         li {
           list-style: none;
-          padding: 10px;
           transition: 0.3s;
           cursor: pointer;
-          &:hover {
-            color: #f2f5fa;
-            background-color: #475569;
-          }
-          &:hover a {
-            color: #f2f5fa;
-          }
           a {
             // transition: 0.4s;
-            text-decoration: none;
-            color: #475569;
+            display: block;
+            background-color: #f2f5fa;
+            padding: 10px;
+            &:hover {
+              color: #f2f5fa;
+              background-color: #475569;
+            }
           }
         }
       }
