@@ -85,12 +85,34 @@ header {
   margin-top: 30px;
   margin-left: 80px;
   ul {
-    li {
+    .li-list {
       position: relative;
       display: inline;
-      &:not(:last-child) {
-        margin-right: 40px;
+      // &:not(:last-child) {
+      margin-right: 40px;
+      &:not(:nth-child(3))::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        border-radius: 14px;
+        background-color: #f86b05;
+        display: inline-block;
+        z-index: 1;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        opacity: 0;
+        transition: 0.3s ease;
+        // &:not(:nth-child(3)) {
+
+        // }
       }
+      &:hover::after {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
       // .arrow {
       //   position: absolute;
       //   top: 27px;
@@ -103,25 +125,10 @@ header {
         text-decoration: none;
         color: #232628;
         position: relative;
-        &::after {
-          content: "";
-          width: 100%;
-          height: 2px;
-          border-radius: 14px;
-          background-color: #f86b05;
-          display: inline-block;
-          z-index: 1;
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%) translateY(10px);
-          opacity: 0;
-          transition: 0.3s ease;
-        }
-        &:hover::after {
-          transform: translateX(-50%) translateY(0);
-          opacity: 1;
-        }
+        // &:hover::after {
+        //   transform: translateX(-50%) translateY(0);
+        //   opacity: 1;
+        // }
       }
       .service-arrow-image {
         &::before {
@@ -133,14 +140,53 @@ header {
           background-repeat: no-repeat;
           background-size: contain;
           background-image: url(./ფოტოები/arrow.svg);
-          right: -13px;
+          right: -14px;
           top: 50%;
           transform: translateY(-50%);
         }
       }
+      .service-box {
+        background-color: transparent;
+        position: absolute;
+        left: 22%;
+        transform: translateX(-20%) translateY(-11px);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        width: 100px;
+        cursor: pointer;
+        ul {
+          background-color: #f2f5fa;
+          width: 260px;
+          margin-top: 30px;
+        }
+        li {
+          list-style: none;
+          padding: 10px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            color: #f2f5fa;
+            background-color: #475569;
+          }
+          &:hover a {
+            color: #f2f5fa;
+          }
+          a {
+            // transition: 0.4s;
+            text-decoration: none;
+            color: #475569;
+          }
+        }
+      }
+      &:hover .service-box {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
+
 .main-container {
   position: relative;
   background-image: url(./ფოტოები/cover.png);
