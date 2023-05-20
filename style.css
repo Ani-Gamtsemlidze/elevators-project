@@ -56,6 +56,10 @@ header {
   height: 100%;
 }
 
+.menu-bar {
+  display: none;
+}
+
 .navigation-bar {
   margin-top: 30px;
   margin-left: 80px;
@@ -338,6 +342,12 @@ header {
   margin: 50px 7px;
   background-color: #f2f5fa;
 }
+.contact-box .image-contact {
+  width: 606px;
+  height: 288px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .contact-info .contact {
   padding: 12px 108px;
@@ -414,4 +424,283 @@ header {
 .copy-text span {
   font-size: 12px;
   color: #475569;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 60px;
+  }
+  .main-logo {
+    max-width: 34px;
+    width: 100%;
+    height: 48px;
+  }
+  .main-logo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  #home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21px;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .navigation-bar {
+    display: none;
+  }
+  .container {
+    max-width: 1240px;
+    width: 100%;
+    padding: unset;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main-container {
+    position: relative;
+    background-image: url(./images/cover.png);
+    width: 100%;
+    height: calc(100vh - 18px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid #f2f5fa;
+    padding: 7% 0 0 24px;
+    margin: 24px 0;
+  }
+  .main-heading {
+    display: block;
+    margin-top: 20px;
+    max-width: 344px;
+    width: 100%;
+    color: #232628;
+  }
+  .main-heading h2 {
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .heading-paragraph {
+    max-width: 273px;
+    width: 100%;
+    margin-top: 24px;
+  }
+  .heading-paragraph p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .heading-span {
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    width: 250p;
+  }
+  .heading-span span {
+    font-size: 14px;
+    line-height: 18px;
+    color: #475569;
+  }
+  .heading-span .info-arrow {
+    border: 1px solid #475569;
+    border-radius: 50%;
+    padding: 4px 9px 7px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .social-media-icons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .social-media-icons .custom-link {
+    width: 24px;
+    height: 24px;
+  }
+  .social-media-icons .facebook-icon {
+    width: 24px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 24px;
+  }
+  .social-media-icons .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 20px;
+  }
+  .about-us-page {
+    background-color: #f2f5fa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-heading {
+    margin-top: 64px;
+    max-width: 235px;
+  }
+  .about-us-heading h2 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    border-bottom: 1px solid #f86b05;
+    color: #232628;
+  }
+  .about-content {
+    max-width: 348px;
+    width: 100%;
+    padding: 24px 0 58px;
+  }
+  .about-content p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-heading {
+    margin: 56px 0 20px;
+  }
+  .service-heading h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #232628;
+    text-align: center;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+  }
+  .service-part1 {
+    display: unset;
+    justify-content: space-around;
+    margin-bottom: unset;
+    margin: 0 17px;
+  }
+  .service-part1 a {
+    text-decoration: none;
+  }
+  .service-part1 .service {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 18px 0;
+    background-color: #f2f5fa;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    transition: 0.3s ease;
+    flex-direction: column;
+  }
+  .service-part1 .service img {
+    width: 348px;
+    height: 200px;
+  }
+  .service-part1 .service::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 348px;
+    height: 100%;
+    background-color: #475569;
+    transition: 0.3s ease;
+    opacity: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+  .service-part1 .service:hover::after {
+    opacity: 0.6;
+  }
+  .service-part1 .service .install-text {
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 64px 45px;
+    width: 100%;
+  }
+  .service-part1 .service .install-text h2 {
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #232628;
+    border-bottom: 1px solid #f86b05;
+    transition: 0.3s ease;
+  }
+  .service-part1 .service:hover {
+    background-color: #475569;
+  }
+  .service-part1 .service:hover h2 {
+    color: #fff;
+  }
+  .contact-heading {
+    margin: 120px 0 50px;
+  }
+  .contact-heading h2 {
+    font-size: 56px;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    color: #232628;
+    text-align: center;
+  }
+  .contact-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 7px;
+    background-color: #f2f5fa;
+  }
+  .contact-box .image-contact {
+    width: 361px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact-info .contact {
+    padding: 12px 108px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-info a {
+    text-decoration: none;
+    display: flex;
+  }
+  .contact-info .tele {
+    color: #232628;
+    /* margin: 0 32px; */
+    padding: 0 9px;
+  }
+  .contact-info span {
+    margin-left: 10px;
+    color: #232628;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .footer-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+  .footer-texts {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 20px;
+  }
+  .main-about {
+    margin: unset;
+  }
+  .copy-text {
+    padding: 20px 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
