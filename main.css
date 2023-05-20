@@ -408,6 +408,9 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+.social-media-icons .custom-link {
+  width: 24px;
+}
 .social-media-icons .facebook-icon {
   width: 24px;
   -o-object-fit: contain;

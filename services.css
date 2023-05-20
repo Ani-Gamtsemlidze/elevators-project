@@ -118,20 +118,17 @@ header {
 }
 .navigation-bar ul .li-list .service-box li {
   list-style: none;
-  padding: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
-.navigation-bar ul .li-list .service-box li:hover {
+.navigation-bar ul .li-list .service-box li a {
+  display: block;
+  background-color: #f2f5fa;
+  padding: 10px;
+}
+.navigation-bar ul .li-list .service-box li a:hover {
   color: #f2f5fa;
   background-color: #475569;
-}
-.navigation-bar ul .li-list .service-box li:hover a {
-  color: #f2f5fa;
-}
-.navigation-bar ul .li-list .service-box li a {
-  text-decoration: none;
-  color: #475569;
 }
 .navigation-bar ul .li-list:hover .service-box {
   opacity: 1;
@@ -207,4 +204,60 @@ header {
 }
 .page-2 .page-1-text .page-2-header {
   color: #fff;
+}
+
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top: 1px solid #f2f5fa;
+  padding: 25px 15px;
+}
+
+.footer-texts {
+  display: flex;
+}
+
+.main-about {
+  margin: 0 50px;
+}
+.main-about a {
+  text-decoration: none;
+  color: #475569;
+  display: block;
+  padding: 7px 0;
+}
+
+.service-footer a {
+  text-decoration: none;
+  color: #475569;
+  display: block;
+  padding: 7px 0;
+}
+
+.contact-footer {
+  position: relative;
+}
+.contact-footer .contact {
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+}
+.contact-footer .contact a {
+  text-decoration: none;
+  color: #475569;
+  display: flex;
+  margin-right: 10px;
+}
+.contact-footer .contact a span {
+  margin-left: 10px;
+}
+
+.copy-text {
+  border-top: 1px solid #f2f5fa;
+  padding: 16px 102px;
+}
+.copy-text span {
+  font-size: 12px;
+  color: #475569;
 }/*# sourceMappingURL=services.css.map */

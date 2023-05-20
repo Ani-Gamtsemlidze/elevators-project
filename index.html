@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="elevator-page">
-      <header class="container">
+      <header class="container" id="home">
         <div class="main-logo">
           <img src="./ფოტოები/logo.svg" />
         </div>
@@ -22,15 +22,15 @@
               <a class="service-arrow-image" href="services.html">სერვისები</a>
               <div class="service-box">
                 <ul>
-                  <li> <a href="services.html#elevator-install-page">ლიფტების მონტაჟი</a>
+                  <li> <a href="services.html#elevator-install">ლიფტების მონტაჟი</a>
                     </li>
-                  <li><a href="#">ლიფტების მომსახურება</a></li>
-                  <li><a href="#">საბარათე სისტემის დაყენება</a></li>
-                  <li><a href="#">ლიფტების მოდერნიზაცია</a></li>
+                  <li><a href="services.html#elevator-service">ლიფტების მომსახურება</a></li>
+                  <li><a href="services.html#card-install">საბარათე სისტემის დაყენება</a></li>
+                  <li><a href="services.html#modern-elevator">ლიფტების მოდერნიზაცია</a></li>
                 </ul>            
               </div>
             </li>
-            <li class="li-list"><a href="#">კონტაქტი</a></li>
+            <li class="li-list"><a href="index.html#contact">კონტაქტი</a></li>
           </ul>
         </div>
       </header>
@@ -46,15 +46,18 @@
           </div>
           <div class="heading-span">
             <span>გაეცანით დამატებით ინფორმაციას</span>
+            
+            <a href="index.html#about-us">
             <div class="info-arrow">
-              <img src="./ფოტოები/arrow.svg" />
-            </div>
+                <img src="./ფოტოები/arrow.svg" />
+              </div>
+            </a>
           </div>
           <div class="social-media-icons">
-            <a href="#">
+            <a class="custom-link" href="#">
               <img class="facebook-icon" src="./ფოტოები/Facebook-Vector.svg" />
             </a>
-            <a href="#">
+            <a class="custom-link" href="#">
               <img class="whatsapp-icon" src="./ფოტოები/whatsapp-Vector.svg" />
             </a>
           </div>
@@ -81,43 +84,56 @@
           <h2>სერვისები</h2>
         </div>
         <div class="service-part1">
-          <div class="service elevator-install">
+          <a href="services.html#elevator-install" class="service elevator-install">
             <div class="install-text">
               <h2>ლიფტების მონტაჟი</h2>
             </div>
-            <!-- <div class="install-image"> -->
             <img src="./ფოტოები/service-images/install-elevator.png" />
-            <!-- </div> -->
-          </div>
-          <div class="service card-system-install">
+          </a>
+        
+          <a href="services.html#elevator-service" class="service card-system-install" id="elevator-id">
             <div class="card-text install-text">
               <h2 class="card-text-heading">ლიფტების მომსახურება</h2>
             </div>
-            <!-- <div class="install-image"> -->
             <img src="./ფოტოები/service-images/elevator-services.png" />
-            <!-- </div> -->
-          </div>
+          </a>
         </div>
+        
+        <!-- <div class="service-part1">
+          
+          <div class="service elevator-install" id="card-install">
+              <div class="install-text">
+                <h2>საბარათე სისტემის დაყენება</h2>
+              </div>
+              <img src="./ფოტოები/service-images/card-image 7.png" />
+            </div>
+          
+          <div class="service card-system-install">
+              <div class="install-text">
+                <h2 class="card-text-heading">ლიფტების მოდერნიზაცია</h2>
+              </div>
+
+              <img src="./ფოტოები/service-images/elevator-modern.png" />
+            </div>
+        </div> -->
         <div class="service-part1">
-          <div class="service elevator-install">
+          <a href="services.html#card-install" class="service elevator-install" id="card-install">
             <div class="install-text">
               <h2>საბარათე სისტემის დაყენება</h2>
             </div>
-            <!-- <div class="install-image"> -->
             <img src="./ფოტოები/service-images/card-image 7.png" />
-            <!-- </div> -->
-          </div>
-          <div class="service card-system-install">
+          </a>
+        
+          <a href="services.html#modern-elevator" class="service card-system-install">
             <div class="install-text">
               <h2 class="card-text-heading">ლიფტების მოდერნიზაცია</h2>
             </div>
-            <!-- <div class="install-image"> -->
             <img src="./ფოტოები/service-images/elevator-modern.png" />
-            <!-- </div> -->
-          </div>
+          </a>
         </div>
+
       </section>
-      <section class="contact-info-page container">
+      <section class="contact-info-page container" id="contact">
         <div class="contact-heading">
           <h2>კონტაქტი</h2>
         </div>
@@ -157,15 +173,15 @@
         </div>
         <div class="footer-texts">
           <div class="main-about">
-            <a href="#"> მთავარი </a>
+            <a href="index.html#home"> მთავარი </a>
             <a href="#about-us">ჩვენს შესახებ </a>
           </div>
           <div class="service-footer">
-            <a href="#">სერვისები</a>
-            <a href="#">ლიფტების მონტაჟი </a>
-            <a href="#"> ლიფტების მომსახურება </a>
-            <a href="#"> საბარათე სისტემის დაყენება </a>
-            <a href="#"> ლიფტების მოდერნიზაცია </a>
+            <a href="services.html">სერვისები</a>
+            <a href="services.html#elevator-install">ლიფტების მონტაჟი </a>
+            <a href="services.html#elevator-service"> ლიფტების მომსახურება </a>
+            <a href="services.html#card-install"> საბარათე სისტემის დაყენება </a>
+            <a href="services.html#modern-elevator"> ლიფტების მოდერნიზაცია </a>
           </div>
         </div>
         <div class="contact-footer">
@@ -197,7 +213,6 @@
       </section>
       <div class="copy-text">
         <div class="container">
-
           <span>all rights reserved <span>&#169</span> mywebsite.ge</span>
         </div>
       </div>

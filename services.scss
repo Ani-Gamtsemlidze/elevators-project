@@ -1,5 +1,6 @@
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   font-family: "Helvetica";
@@ -143,6 +144,7 @@ header {
           transform: translateY(-50%);
         }
       }
+
       .service-box {
         background-color: transparent;
         position: absolute;
@@ -160,20 +162,17 @@ header {
         }
         li {
           list-style: none;
-          padding: 10px;
           transition: 0.3s;
           cursor: pointer;
-          &:hover {
-            color: #f2f5fa;
-            background-color: #475569;
-          }
-          &:hover a {
-            color: #f2f5fa;
-          }
           a {
             // transition: 0.4s;
-            text-decoration: none;
-            color: #475569;
+            display: block;
+            background-color: #f2f5fa;
+            padding: 10px;
+            &:hover {
+              color: #f2f5fa;
+              background-color: #475569;
+            }
           }
         }
       }
@@ -257,5 +256,77 @@ header {
     .page-2-header {
       color: #fff;
     }
+  }
+}
+
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top: 1px solid #f2f5fa;
+  padding: 25px 15px;
+}
+.footer-texts {
+  display: flex;
+}
+.main-about {
+  margin: 0 50px;
+  a {
+    text-decoration: none;
+    color: #475569;
+    display: block;
+    padding: 7px 0;
+  }
+}
+.service-footer {
+  a {
+    text-decoration: none;
+    color: #475569;
+    display: block;
+    padding: 7px 0;
+    // &:first-child {
+    //   font-weight: 700;
+    // }
+  }
+}
+
+.contact-footer {
+  position: relative;
+  .contact {
+    // padding: 12px 0;
+    // display: flex;
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    a {
+      // margin-right: 10px;
+      text-decoration: none;
+      color: #475569;
+      display: flex;
+      margin-right: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+// .bottom-line {
+//   width: 1349px;
+//   background-color: #f2f5fa;
+//   height: 1px;
+//   position: absolute;
+//   bottom: 0;
+// }
+
+.copy-text {
+  border-top: 1px solid #f2f5fa;
+  padding: 16px 102px;
+  span {
+    font-size: 12px;
+    color: #475569;
+    // .copy-sign {
+    //   border: 2px solid #475569;
+    //   border-radius: 50%;
+    // }
   }
 }

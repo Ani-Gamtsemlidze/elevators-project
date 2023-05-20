@@ -241,9 +241,12 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  .custom-link {
+    width: 24px;
+    height: 24px;
+  }
   .facebook-icon {
     width: 24px;
-
     object-fit: contain;
     height: 24px;
   }
@@ -300,6 +303,10 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 12px;
+  a {
+    text-decoration: none;
+  }
+
   .service {
     position: relative;
     max-width: 49%;
@@ -309,7 +316,6 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: 0.3s ease;
-    cursor: pointer;
     img {
       width: 290px;
       height: 240px;

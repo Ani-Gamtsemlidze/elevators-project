@@ -198,6 +198,10 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+.social-media-icons .custom-link {
+  width: 24px;
+  height: 24px;
+}
 .social-media-icons .facebook-icon {
   width: 24px;
   -o-object-fit: contain;
@@ -260,6 +264,9 @@ header {
   justify-content: space-around;
   margin-bottom: 12px;
 }
+.service-part1 a {
+  text-decoration: none;
+}
 .service-part1 .service {
   position: relative;
   max-width: 49%;
@@ -269,7 +276,6 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 .service-part1 .service img {
   width: 290px;
