@@ -543,8 +543,7 @@ header {
     h2 {
       font-family: $web-font;
       font-size: 32px;
-      font-weight: 300;
-      line-height: 32px;
+      line-height: 1.3;
     }
   }
   .heading-paragraph {
@@ -634,8 +633,7 @@ header {
   }
 
   .service-heading {
-    margin: 56px 0 20px;
-
+    margin: 45px 0 5px;
     h2 {
       font-size: 32px;
       font-weight: 400;
@@ -648,8 +646,7 @@ header {
   .service-part1 {
     display: unset;
     justify-content: space-around;
-    margin-bottom: unset;
-    margin: 0 17px;
+    margin-bottom: -20px;
     a {
       text-decoration: none;
     }
@@ -716,9 +713,10 @@ header {
   }
 
   .contact-heading {
-    margin: 120px 0 50px;
+    margin: 38px 0 0;
     h2 {
-      font-size: 56px;
+      font-size: 32px;
+      font-weight: 400;
       font-family: $web-font;
       color: #232628;
       text-align: center;
@@ -729,17 +727,22 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    margin: 50px 7px;
+    max-width: 348px;
+    margin: 0 auto;
+    background-color: #f2f5fa;
+    width: 100%;
+    width: unset;
     background-color: #f2f5fa;
     .image-contact {
-      width: 361px;
       height: 200px;
+      width: 100%;
       object-fit: cover;
     }
   }
   .contact-info {
+    padding: 30px 0;
     .contact {
-      padding: 12px 108px;
+      padding: 15px 0;
       display: flex;
       align-items: center;
     }
