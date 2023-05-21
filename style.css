@@ -57,7 +57,14 @@ header {
 }
 
 .menu-bar {
-  display: none;
+  display: block;
+  position: relative;
+}
+.menu-bar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .navigation-bar {
@@ -447,9 +454,70 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 21px;
+    position: relative;
   }
   .menu-bar {
     display: block;
+    position: relative;
+  }
+  .menu-bar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #475569;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .mobile-menu .mobile-close-click {
+    width: 30px;
+    height: 30px;
+    margin: 18px 22px;
+  }
+  .mobile-menu .mobile-close-click img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .mobile-service-list .mobile-texts {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px;
+    position: relative;
+  }
+  .mobile-service-list .mobile-texts li {
+    width: 163px;
+  }
+  .mobile-service-list .mobile-texts a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+  }
+  .mobile-service-list .mobile-texts a .arrow-image {
+    width: 12px;
+    height: 10px;
+    position: absolute;
+    -o-object-fit: contain;
+    object-fit: contain;
+    left: 30%;
+    /* right: 00; */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #mobile-list {
+    display: none;
+    list-style: none;
   }
   .navigation-bar {
     display: none;
@@ -471,7 +539,7 @@ header {
     background-size: cover;
     border-top: 1px solid #f2f5fa;
     padding: 7% 0 0 24px;
-    margin: 24px 0;
+    margin: unset;
   }
   .main-heading {
     display: block;
