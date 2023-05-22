@@ -718,7 +718,7 @@ header {
   .about-content {
     max-width: 348px;
     width: 100%;
-    padding: 24px 0 58px;
+    padding: 22px 15px 47px;
     p {
       font-size: 14px;
       line-height: 20px;
@@ -765,14 +765,14 @@ header {
       transition: 0.3s ease;
       flex-direction: column;
       img {
-        width: 348px;
+        width: 100%;
         height: 200px;
       }
       &::after {
         content: "";
         position: absolute;
         display: inline-block;
-        width: 348px;
+        width: 100%;
         height: 100%;
         background-color: #475569;
         transition: 0.3s ease;
