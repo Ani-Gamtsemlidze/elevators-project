@@ -91,7 +91,7 @@ header {
       margin-right: 40px;
       &:not(:nth-child(3))::after {
         content: "";
-        width: 100%;
+        width: 0;
         height: 2px;
         border-radius: 14px;
         background-color: #f86b05;
@@ -102,32 +102,18 @@ header {
         left: 50%;
         transform: translateX(-50%) translateY(10px);
         opacity: 0;
-        transition: 0.3s ease;
-        // &:not(:nth-child(3)) {
-
-        // }
+        transition: all 0.4s;
       }
       &:hover::after {
-        transform: translateX(-50%) translateY(0);
+        // transform: translateX(-50%) translateY(0);
         opacity: 1;
+        width: 100%;
       }
-
-      // .arrow {
-      //   position: absolute;
-      //   top: 27px;
-      //   right: -2px;
-      //   transform: translateX(-8px);
-      //   cursor: pointer;
-      // }
       a {
         font-size: 16px;
         text-decoration: none;
         color: #232628;
         position: relative;
-        // &:hover::after {
-        //   transform: translateX(-50%) translateY(0);
-        //   opacity: 1;
-        // }
       }
       .service-arrow-image {
         &::before {
