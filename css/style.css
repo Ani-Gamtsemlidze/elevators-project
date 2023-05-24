@@ -542,6 +542,10 @@ header {
  
   }
 
+  .mob_service_dropdown.active ~ #mobile-list {
+    display: block;
+  }
+
 .mob_service_dropdown:after {
   content: "";
   position: absolute;
@@ -553,16 +557,17 @@ header {
   background-image: url(../images/mobile-arrow.svg);
   right: -20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: rotate(180deg) translateY(50%);
   transition: all .2s;
 }
 
 .mob_service_dropdown.active:after  {
-  transform:rotate(180deg) translateY(50%);
+  transform:rotate(0deg) translateY(-50%);
 }
   
   #mobile-list {
     list-style: none;
+    display: none;
   }
  
   .navigation-bar {
