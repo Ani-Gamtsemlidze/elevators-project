@@ -453,6 +453,12 @@ header {
   color: #475569;
 }
 
+@media only screen and (min-width: 992px) {
+.mobile-menu {
+  display: none;
+}
+}
+
 @media only screen and (max-width: 992px) {
   header {
     display: flex;
