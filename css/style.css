@@ -191,9 +191,10 @@ header {
   background-image: url(../images/cover.png);
   width: 100%;
   height: calc(100vh - 77px);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 7% 0 0 24px;
 }
 
@@ -408,6 +409,7 @@ header {
 
 .service-part1 .service:hover h2 {
   color: #fff;
+  z-index: 1;
 }
 
 .contact-heading {
