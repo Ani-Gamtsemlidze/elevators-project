@@ -288,8 +288,8 @@ header {
 
 .service-part1 {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 12px;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 .service-part1 a {
   text-decoration: none;
@@ -303,6 +303,9 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: 0.3s ease;
+}
+.service-part1 .service:last-child {
+  margin-left: 24px;
 }
 .service-part1 .service img {
   width: 290px;
@@ -682,6 +685,7 @@ header {
     display: unset;
     justify-content: space-around;
     margin-bottom: -20px;
+    padding: 0 10px;
   }
   .service-part1 a {
     text-decoration: none;
@@ -697,6 +701,9 @@ header {
     justify-content: unset;
     transition: 0.3s ease;
     flex-direction: column;
+  }
+  .service-part1 .service:last-child {
+    margin-left: 0;
   }
   .service-part1 .service img {
     width: 100%;
@@ -718,11 +725,11 @@ header {
     opacity: 0.6;
   }
   .service-part1 .service .install-text {
-    max-width: 250px;
+    max-width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 64px 45px;
+    padding: 64px 45px;
     width: 100%;
   }
   .service-part1 .service .install-text h2 {

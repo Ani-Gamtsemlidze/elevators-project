@@ -64,6 +64,10 @@ $web-font: "BPG WEB 001 Caps", sans-serif;
   position: relative;
 }
 
+.service-page-container {
+  display: flex;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -78,6 +82,21 @@ header {
     width: 100%;
     height: 100%;
   }
+}
+
+.menu-bar {
+  display: none;
+  position: relative;
+  // margin-left: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .navigation-bar {
@@ -198,14 +217,18 @@ header {
     background-color: #475569;
   }
   .page-1-text {
-    padding: 100px 80px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     h2 {
-      font-family: $web-font;
+      font-family: "BPG WEB 001 Caps", sans-serif;
       color: #232628;
       font-weight: 400;
       font-size: 24px;
       border-bottom: 1px solid #f86b05;
-      display: inline-block;
+      padding-bottom: 8px;
     }
     .elevator-paragraph {
       margin-top: 24px;
@@ -254,6 +277,9 @@ header {
 }
 .main-about {
   margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   a {
     text-decoration: none;
     color: #475569;
@@ -262,14 +288,14 @@ header {
   }
 }
 .service-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   a {
     text-decoration: none;
     color: #475569;
     display: block;
     padding: 7px 0;
-    // &:first-child {
-    //   font-weight: 700;
-    // }
   }
 }
 
@@ -325,12 +351,116 @@ header {
       height: 100%;
     }
   }
+  .menu-bar {
+    display: block;
+    position: relative;
+    // margin-left: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  #home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21px;
+    position: relative;
+  }
+
+  .service-page-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #475569;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    .mobile-close-click {
+      margin: 18px 22px;
+      position: relative;
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        right: 3px;
+        position: absolute;
+      }
+      // &::after {
+      //   content: "";
+      //   width: 333px;
+      //   height: 1px;
+      //   background-color: #f2f5fa;
+      //   position: absolute;
+      //   top: 50px;
+      //   display: block;
+      // }
+    }
+  }
+
+  .mobile-service-list {
+    border-top: 1px solid #fff;
+    margin: 20% 27px;
+    .mobile-texts {
+      display: flex;
+      flex-direction: column;
+      margin: 7% 2px;
+      position: relative;
+      li {
+        // width: 163px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 16px;
+          display: inline-block;
+          padding: 10px 0;
+          position: relative;
+        }
+      }
+      .service-links {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            overflow: hidden;
+            color: #fff;
+            font-size: 16px;
+            display: inline-block;
+            padding: 10px 0;
+            position: relative;
+          }
+        }
+      }
+      .arrow-image {
+        width: 12px;
+        height: 10px;
+        position: absolute;
+        -o-object-fit: contain;
+        object-fit: contain;
+        left: 30%;
+        bottom: 12%;
+        // transform: rotate(180deg);
+      }
+    }
+  }
+
   .navigation-bar {
     display: none;
   }
 
   .heading-service {
     height: 160px;
+    margin: 20px 0;
+
     h2 {
       color: #fff;
       font-size: 32px;
@@ -364,7 +494,7 @@ header {
         p {
           font-size: 16px;
           color: #232628;
-          line-height: 1.6;
+          line-height: 24px;
         }
         .paragraph {
           color: #fff;
