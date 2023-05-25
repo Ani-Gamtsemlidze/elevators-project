@@ -1015,7 +1015,7 @@ header {
 .service-page-1 .page-1-text .elevator-paragraph p {
   font-size: 16px;
   color: #232628;
-  line-height: 1.6;
+  line-height: 28px;
 }
 
 .service-page-1 .page-1-text .elevator-paragraph .paragraph {
@@ -1266,7 +1266,7 @@ header {
     font-size: 24px;
     border-bottom: 1px solid #f86b05;
     display: inline-block;
-    line-height: 1.5;
+    line-height: 33px;
   }
 
   .service-page-1 .page-1-text .elevator-paragraph {
@@ -1278,7 +1278,7 @@ header {
   .service-page-1 .page-1-text .elevator-paragraph p {
     font-size: 16px;
     color: #232628;
-    line-height: 24px;
+    line-height: 28px;
   }
 
   .service-page-1 .page-1-text .elevator-paragraph .paragraph {
