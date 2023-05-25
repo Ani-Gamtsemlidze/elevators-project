@@ -679,7 +679,7 @@ header {
     background-image: url(../images/cover.png);
     width: 100%;
     height: calc(100vh - 18px);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #f2f5fa;
