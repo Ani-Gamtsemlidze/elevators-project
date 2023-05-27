@@ -685,6 +685,7 @@ header {
     border-top: 1px solid #f2f5fa;
     padding: 7% 0 0 24px;
     margin: unset;
+    background-attachment: unset;
   }
 
   .main-heading {
