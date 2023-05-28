@@ -687,7 +687,6 @@ header {
     margin: unset;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-attachment: fixed;
   }
 
   .main-heading {
@@ -1108,7 +1107,7 @@ header {
 
 .copy-text {
   border-top: 1px solid #f2f5fa;
-  padding: 16px 102px;
+  padding: 16px 0;
 }
 
 .copy-text span {
