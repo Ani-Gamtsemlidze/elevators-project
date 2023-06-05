@@ -1337,6 +1337,10 @@ header {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .main-heading {
+      font-size: 22px;
+      line-height: 32px;
+    }
     .main-container {
       background-attachment: unset;
     }
