@@ -26,3 +26,10 @@ document
     this.classList.toggle("active");
     document.getElementById("mobile-list").classList.toggle("active");
   });
+
+if (navigator.userAgent.indexOf("Safari") != -1) {
+  document.querySelector(".heading-service").style.backgroundAttachment =
+    "unset";
+  document.querySelector(".main-container").style.backgroundAttachment =
+    "unset";
+}
