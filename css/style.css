@@ -1334,3 +1334,14 @@ header {
   background: #fdb417;
   border-radius: 1px;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .main-container {
+      background-attachment: unset;
+    }
+    .heading-service {
+      background-attachment: unset;
+    }
+  }
+}

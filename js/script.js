@@ -27,9 +27,9 @@ document
     document.getElementById("mobile-list").classList.toggle("active");
   });
 
-if (navigator.userAgent.indexOf("Safari") != -1) {
-  document.querySelector(".heading-service").style.backgroundAttachment =
-    "unset";
-  document.querySelector(".main-container").style.backgroundAttachment =
-    "unset";
-}
+// if (navigator.userAgent.indexOf("Safari") != -1) {
+//   document.querySelector(".heading-service").style.backgroundAttachment =
+//     "unset";
+//   document.querySelector(".main-container").style.backgroundAttachment =
+//     "unset";
+// }
