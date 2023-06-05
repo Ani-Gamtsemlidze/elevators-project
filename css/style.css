@@ -1335,7 +1335,7 @@ header {
   border-radius: 1px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
+@media not all and (min-resolution: 0.001dpcm) and (-webkit-min-device-pixel-ratio: 0) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .main-heading {
       font-size: 22px;
