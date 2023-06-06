@@ -90,7 +90,7 @@ header {
 
 .navigation-bar {
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 .navigation-bar ul .li-list {
@@ -108,7 +108,7 @@ header {
   display: inline-block;
   z-index: 1;
   position: absolute;
-  bottom: -10px;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   opacity: 0;
@@ -192,12 +192,13 @@ header {
   position: relative;
   background-image: url(../images/cover.png);
   width: 100%;
-  height: calc(100vh - 77px);
+  /* height: calc(100vh - 77px); */
+  height: 100vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 7% 0 0 24px;
+  padding: 147px 0 24px;
 }
 
 .main-heading {
@@ -248,7 +249,7 @@ header {
 .heading-span .info-arrow {
   width: 24px;
   height: 24px;
-  margin-left: 10px;
+  margin-left: 16px;
   cursor: pointer;
 }
 
@@ -260,7 +261,7 @@ header {
 }
 
 .social-media-icons {
-  margin-top: 50px;
+  margin-top: 62px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -446,7 +447,7 @@ header {
 }
 
 .contact-info .contact {
-  padding: 12px 108px;
+  margin: 22px 80px;
   display: flex;
   align-items: center;
 }
@@ -466,8 +467,7 @@ header {
 
 .contact-info .tele {
   color: #232628;
-  /* margin: 0 32px; */
-  padding: 0 9px;
+  padding: 0 11px;
 }
 
 .contact-info span {
@@ -477,13 +477,13 @@ header {
   font-weight: 400;
 }
 
-.footer-page {
+/* .footer-page {
   display: flex;
   justify-content: space-between;
   position: relative;
   border-top: 1px solid #f2f5fa;
   padding: 25px 15px;
-}
+} */
 
 .footer-texts {
   display: flex;
@@ -491,20 +491,6 @@ header {
 
 .main-about {
   margin: 0 50px;
-}
-
-.main-about a {
-  text-decoration: none;
-  color: #475569;
-  display: block;
-  padding: 7px 0;
-}
-
-.service-footer a {
-  text-decoration: none;
-  color: #475569;
-  display: block;
-  padding: 7px 0;
 }
 
 .contact-footer {
@@ -705,8 +691,12 @@ header {
 
   .main-heading {
     display: block;
-    margin-top: 20px;
+    margin-top: 36px;
     max-width: 344px;
+  }
+
+  .heading-span {
+    margin-top: 20px;
   }
 
   .main-heading h1 {
@@ -716,6 +706,7 @@ header {
 
   .heading-paragraph {
     max-width: 273px;
+    margin-top: 18px;
   }
 
   .heading-paragraph p {
@@ -769,9 +760,9 @@ header {
   }
 
   .about-content {
-    max-width: 348px;
+    min-width: 348px;
     width: 100%;
-    padding: 22px 15px 47px;
+    padding: 21px 24px 40px;
   }
 
   .about-content p {
@@ -918,6 +909,7 @@ header {
     padding: 15px 0;
     display: flex;
     align-items: center;
+    margin: unset;
   }
 
   .contact-info a {
@@ -976,7 +968,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 56px 0 24px;
   background-attachment: fixed;
 }
 
@@ -998,7 +990,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #f2f5fa;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
 .service-page-1 .page-2 {
@@ -1006,7 +998,7 @@ header {
 }
 
 .service-page-1 .page-1-text {
-  padding: 0 80px;
+  padding: 0 102px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1023,7 +1015,7 @@ header {
 }
 
 .service-page-1 .page-1-text .elevator-paragraph {
-  margin-top: 24px;
+  margin-top: 32px;
   max-width: 578px;
   width: 100%;
 }
@@ -1064,8 +1056,8 @@ header {
   justify-content: space-between;
   position: relative;
   border-top: 1px solid #f2f5fa;
-  padding: 25px 15px;
-  margin-top: 100px;
+  padding: 32px 15px 48px;
+  margin-top: 120px;
 }
 
 .footer-texts {
@@ -1079,11 +1071,20 @@ header {
   align-items: flex-start;
 }
 
+.footer-link {
+  font-weight: 700;
+  padding: 7px 0px 16px;
+}
+
 .main-about a {
   text-decoration: none;
   color: #475569;
   display: block;
-  padding: 7px 0;
+  padding: 7px 0px 16px;
+}
+
+.lists {
+  margin-top: 16px;
 }
 
 .service-footer {
@@ -1096,38 +1097,15 @@ header {
   text-decoration: none;
   color: #475569;
   display: block;
-  padding: 7px 0;
+  padding: 7px 0 0;
 }
 
 .contact-footer {
   position: relative;
 }
 
-.contact-footer .contact {
-  padding: 12px 0px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-footer .contact a {
-  text-decoration: none;
-  color: #475569;
-  display: flex;
-  margin-right: 10px;
-}
-
 .contact-footer .contact a span {
   margin-left: 10px;
-}
-
-.copy-text {
-  border-top: 1px solid #f2f5fa;
-  padding: 16px 0;
-}
-
-.copy-text span {
-  font-size: 12px;
-  color: #475569;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1253,7 +1231,7 @@ header {
 
   .heading-service {
     height: 160px;
-    margin: 20px 0;
+    margin: 24px 0 56px;
   }
 
   .heading-service h2 {
@@ -1266,7 +1244,6 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #f2f5fa;
-    margin: 20px 0;
   }
 
   .service-page-1 .page-2 {
@@ -1289,7 +1266,7 @@ header {
 
   .service-page-1 .page-1-text .elevator-paragraph {
     margin-top: 24px;
-    max-width: 578px;
+    max-width: 348px;
     width: 100%;
   }
 
@@ -1321,13 +1298,13 @@ header {
     display: flex;
     flex-direction: column;
     padding: 30px 50px;
-    margin-top: 50px;
+    margin-top: 56px;
   }
 
   .footer-texts {
     display: flex;
     flex-direction: column;
-    margin: 55px 0 22px;
+    margin: 40px 0 43px;
   }
 
   .main-about {
