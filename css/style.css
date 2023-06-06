@@ -152,7 +152,7 @@ header {
   visibility: hidden;
   width: 100px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .navigation-bar ul .li-list .service-box ul {
@@ -163,7 +163,7 @@ header {
 
 .navigation-bar ul .li-list .service-box li {
   list-style: none;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   cursor: pointer;
 }
 
@@ -171,11 +171,12 @@ header {
   display: block;
   background-color: #f2f5fa;
   padding: 10px;
+  transition: all 0.1s;
 }
 
 .navigation-bar ul .li-list .service-box li a:hover {
-  color: #f2f5fa;
-  background-color: #475569;
+  color: #fff;
+  background-color: #fdb417;
 }
 
 .navigation-bar ul .li-list:hover .service-box {
@@ -266,20 +267,24 @@ header {
 }
 
 .social-media-icons .custom-link {
-  width: 24px;
-  height: 24px;
-  transition: all 0.3s;
+  width: 26px;
+  height: 26px;
+  transition: all 0.4s;
+  object-fit: contain;
+}
+
+.fb-link {
+  margin-bottom: 21px;
 }
 
 .social-media-icons .facebook-icon {
   width: 24px;
-  -o-object-fit: contain;
   object-fit: contain;
   height: 24px;
 }
 
-.custom-link:hover {
-  transform: scale(1.1);
+.custom-link svg:hover path {
+  fill: #9199a5;
 }
 
 .social-media-icons .whatsapp-icon {
@@ -287,7 +292,7 @@ header {
   height: 28px;
   -o-object-fit: contain;
   object-fit: contain;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .about-us-page {
@@ -414,7 +419,7 @@ header {
 }
 
 .contact-heading {
-  margin: 120px 0 50px;
+  margin: 120px 0 24px;
 }
 
 .contact-heading h2 {
@@ -429,7 +434,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 7px;
+  margin: 0px 7px 50px;
   background-color: #f2f5fa;
 }
 
@@ -449,6 +454,14 @@ header {
 .contact-info a {
   text-decoration: none;
   display: flex;
+}
+
+.tele-img {
+  width: 18px !important;
+}
+
+.contact-info img {
+  width: 20px;
 }
 
 .contact-info .tele {
@@ -514,6 +527,10 @@ header {
 
 .contact-footer .contact a span {
   margin-left: 10px;
+}
+
+.contact-footer img {
+  width: 20px;
 }
 
 .copy-text {
@@ -616,10 +633,15 @@ header {
   .mobile-service-list .mobile-texts .service-links li {
     display: inline-block;
     list-style: none;
+    font-weight: 700;
   }
   .mobile-service-list .mobile-texts .service-links ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .main {
+    font-weight: 300;
   }
 
   .mob_service_dropdown {
@@ -641,7 +663,7 @@ header {
     background-image: url(../images/mobile-arrow.svg);
     right: -20px;
     top: 50%;
-    transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg) translateY(40%);
     transition: all 0.2s;
   }
 
@@ -767,7 +789,7 @@ header {
   }
 
   .service-heading {
-    margin: 30px 0 0;
+    margin: 56px 0 0;
   }
 
   .service-heading h2 {
@@ -857,7 +879,7 @@ header {
   }
 
   .contact-heading {
-    margin: 30px 0 0;
+    margin: 56px 0 0;
   }
 
   .contact-heading h2 {
@@ -935,7 +957,7 @@ header {
   }
 
   .copy-text {
-    padding: 16px 50px;
+    padding: 16px 50px 37px;
   }
 }
 
@@ -1078,6 +1100,7 @@ header {
 
 .contact-footer {
   position: relative;
+  margin-top: 10px;
 }
 
 .contact-footer .contact {
@@ -1304,7 +1327,7 @@ header {
   .footer-texts {
     display: flex;
     flex-direction: column;
-    margin: 27px 0 22px;
+    margin: 55px 0 22px;
   }
 
   .main-about {
@@ -1312,28 +1335,28 @@ header {
   }
 
   .copy-text {
-    padding: 16px 50px;
+    padding: 16px 50px 37px;
   }
 }
 
 /*# sourceMappingURL=services.css.map */
 
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 15px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background-color: #f2f5fa;
   border-radius: 1px;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #fdb417;
   border-radius: 1px;
-}
+}  */
 
 @media not all and (min-resolution: 0.001dpcm) and (-webkit-min-device-pixel-ratio: 0) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
