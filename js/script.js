@@ -19,10 +19,20 @@ close.addEventListener("click", function () {
   document.querySelector(".mobile-menu").classList.remove("active");
 });
 
-document
-  .getElementsByClassName("mob_service_dropdown")[0]
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    this.classList.toggle("active");
-    document.getElementById("mobile-list").classList.toggle("active");
-  });
+// document
+//   .getElementsByClassName("mob_service_dropdown")[0]
+//   .addEventListener("click", function (e) {
+//     e.preventDefault();
+//     this.classList.toggle("active");
+//     document.getElementById("mobile-list").classList.toggle("active");
+//   });
+
+// var element = document.getElementById("element");
+
+// element.addEventListener("mouseenter", function () {
+//   element.style.height = element.scrollHeight + "px";
+// });
+
+// element.addEventListener("mouseleave", function () {
+//   element.style.height = "0";
+// });

@@ -155,6 +155,17 @@ header {
   transition: all 0.4s;
 }
 
+#toggleMe {
+  -webkit-transition: height 0.25s ease;
+  -o-transition: height 0.25s ease;
+  transition: height 0.25s ease;
+  overflow: hidden;
+}
+
+#toggleMe:not(.active) {
+  display: none;
+}
+
 .navigation-bar ul .li-list .service-box ul {
   background-color: #f2f5fa;
   width: 260px;
@@ -967,8 +978,8 @@ header {
 .heading-service {
   background-image: url(../images/service-background.png);
   height: 296px;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100% 515px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -1235,8 +1246,12 @@ header {
   }
 
   .heading-service {
+    background-image: url(/images/service-images/elevator-mobile.svg);
     height: 160px;
     margin: 24px 0 56px;
+    background-size: 100% 337px;
+    background-repeat: no-repeat;
+    background-position: unset;
   }
 
   .heading-service h2 {
