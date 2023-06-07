@@ -1386,7 +1386,8 @@ header {
       background-attachment: unset;
     }
     .heading-service {
-      /* background-attachment: unset; */
+      background-attachment: unset;
+      background-size: unset;
     }
   }
 }
