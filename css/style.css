@@ -568,13 +568,6 @@ header {
     height: 100%;
   }
 
-  #home {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 21px;
-    position: relative;
-  }
-
   .menu-bar {
     display: block;
     position: relative;
@@ -1153,9 +1146,8 @@ header {
   #home {
     display: flex;
     justify-content: space-between;
-    padding: 0 21px;
     position: relative;
-    padding: 20px 20px 20px;
+    padding: 20px 20px 24px;
   }
 
   .service-page-container {
@@ -1248,13 +1240,14 @@ header {
   .heading-service {
     background-image: url(../images/service-images/elevator-mobile.svg);
     height: 160px;
-    margin: 24px 0 56px;
-    background-size: cover;
+    margin-bottom: 56px;
+    margin: unset;
+    background-size: 100% 305px;
     background-repeat: no-repeat;
     background-position: unset;
   }
 
-  .heading-service h2 {
+  .heading-service h1 {
     color: #fff;
     font-size: 32px;
   }
@@ -1367,20 +1360,33 @@ header {
   border-radius: 1px;
 }  */
 
-.main-container.saf {
+/* .main-container.saf {
   background-attachment: unset !important;
+>>>>>>> d5051cda08b5476f74b69a0aca936eeb73537dc1
 }
 
 .heading-service.saf {
   background-attachment: unset !important;
-}
+} */
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   .main-container {
     background-attachment: unset !important;
   }
-
+  
   .heading-service {
     background-attachment: unset !important;
+  }
+
+} */
+
+@media not all and (min-resolution: 0.001dpcm) and (-webkit-min-device-pixel-ratio: 0) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .main-container {
+      background-attachment: unset;
+    }
+    .heading-service {
+      background-attachment: unset;
+    }
   }
 }

@@ -19,26 +19,24 @@ close.addEventListener("click", function () {
   document.querySelector(".mobile-menu").classList.remove("active");
 });
 
+$(".mob_service_dropdown ").click(function (e) {
+  e.preventDefault();
+  $(this).next().slideToggle();
+  $(this).toggleClass("active");
+});
 
-$(".mob_service_dropdown ").click(function(e){
-  e.preventDefault()
-  $(this).next().slideToggle()
-  $(this).toggleClass("active")
-})
+// var userAgent = window.navigator.userAgent;
 
-var userAgent = window.navigator.userAgent;
+// if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+//    // iPad or iPhone
 
-if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-   // iPad or iPhone
+//    $(".main-container").addClass("saf")
+//    $(".heading-service").addClass("saf")
+// }
 
+// if(navigator.userAgent.indexOf("Safari") != -1)
+//     {
 
-   $(".main-container").addClass("saf")
-   $(".heading-service").addClass("saf")
-}
-
-if(navigator.userAgent.indexOf("Safari") != -1)
-    {
-     
-   $(".main-container").addClass("saf")
-   $(".heading-service").addClass("saf")
-    }
+//    $(".main-container").addClass("saf")
+//    $(".heading-service").addClass("saf")
+//     }
