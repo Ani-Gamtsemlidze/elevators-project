@@ -159,6 +159,7 @@ header {
   background-color: #f2f5fa;
   width: 260px;
   margin-top: 30px;
+  /* display: none; */
 }
 
 .navigation-bar ul .li-list .service-box li {
@@ -886,7 +887,7 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 348px;
+    /* max-width: 348px; */
     margin: 21px;
     background-color: #f2f5fa;
     width: 100%;
@@ -936,6 +937,10 @@ header {
     flex-direction: column;
     padding: 30px 50px;
     margin-top: 50px;
+    border-top: unset;
+  }
+  .footer-logo {
+    margin-top: 51px;
   }
 
   .footer-texts {
@@ -1299,6 +1304,18 @@ header {
     flex-direction: column;
     padding: 30px 50px;
     margin-top: 56px;
+    border-top: unset;
+    position: relative;
+  }
+
+  .footer-page::before {
+    content: "";
+    width: 348px;
+    height: 1px;
+    background-color: #f2f5fa;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .footer-texts {
