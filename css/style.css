@@ -1378,6 +1378,9 @@ header {
     }
     .heading-service {
       background-attachment: unset;
+      background-size: unset;
+      background-repeat: no-repeat;
+      background-position: unset;
     }
   }
 }
