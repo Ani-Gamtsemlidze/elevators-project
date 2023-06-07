@@ -26,3 +26,12 @@ $(".mob_service_dropdown ").click(function(e){
   $(this).toggleClass("active")
 })
 
+var userAgent = window.navigator.userAgent;
+
+if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+   // iPad or iPhone
+
+
+   $(".main-container").addClass("saf")
+   $(".heading-service").addClass("saf")
+}

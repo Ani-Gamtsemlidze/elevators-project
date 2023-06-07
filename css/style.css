@@ -1367,20 +1367,11 @@ header {
   border-radius: 1px;
 }  */
 
-@media not all and (min-resolution: 0.001dpcm) and (-webkit-min-device-pixel-ratio: 0) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .main-heading {
-      font-size: 22px;
-      line-height: 32px;
-    }
-    .main-container {
-      background-attachment: unset;
-    }
-    .heading-service {
-      background-attachment: unset;
-      background-size: unset;
-      background-repeat: no-repeat;
-      background-position: unset;
-    }
-  }
+.main-container.saf {
+  background-attachment: unset !important;
 }
+
+.heading-service.saf {
+  background-attachment: unset !important;
+}
+
