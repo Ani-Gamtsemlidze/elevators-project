@@ -1391,3 +1391,10 @@ header {
     }
   }
 }
+
+@media screen and (min-device-width: 0px) and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (min-width: 0px) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px) {
+  .main-heading h1 {
+    font-size: 31px;
+  }
+}
