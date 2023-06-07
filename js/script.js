@@ -35,3 +35,10 @@ if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
    $(".main-container").addClass("saf")
    $(".heading-service").addClass("saf")
 }
+
+if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+     
+   $(".main-container").addClass("saf")
+   $(".heading-service").addClass("saf")
+    }
