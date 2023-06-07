@@ -1375,3 +1375,13 @@ header {
   background-attachment: unset !important;
 }
 
+@media only screen and (max-width: 992px) {
+  .main-container {
+    background-attachment: unset !important;
+  }
+  
+  .heading-service {
+    background-attachment: unset !important;
+  }
+
+}
