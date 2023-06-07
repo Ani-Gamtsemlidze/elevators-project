@@ -19,20 +19,26 @@ close.addEventListener("click", function () {
   document.querySelector(".mobile-menu").classList.remove("active");
 });
 
-// document
-//   .getElementsByClassName("mob_service_dropdown")[0]
-//   .addEventListener("click", function (e) {
-//     e.preventDefault();
-//     this.classList.toggle("active");
-//     document.getElementById("mobile-list").classList.toggle("active");
-//   });
 
-// var element = document.getElementById("element");
+$(".mob_service_dropdown ").click(function(e){
+  e.preventDefault()
+  $(this).next().slideToggle()
+  $(this).toggleClass("active")
+})
 
-// element.addEventListener("mouseenter", function () {
-//   element.style.height = element.scrollHeight + "px";
-// });
+var userAgent = window.navigator.userAgent;
 
-// element.addEventListener("mouseleave", function () {
-//   element.style.height = "0";
-// });
+if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+   // iPad or iPhone
+
+
+   $(".main-container").addClass("saf")
+   $(".heading-service").addClass("saf")
+}
+
+if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+     
+   $(".main-container").addClass("saf")
+   $(".heading-service").addClass("saf")
+    }

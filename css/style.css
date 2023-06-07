@@ -1246,10 +1246,10 @@ header {
   }
 
   .heading-service {
-    background-image: url(/images/service-images/elevator-mobile.svg);
+    background-image: url(../images/service-images/elevator-mobile.svg);
     height: 160px;
     margin: 24px 0 56px;
-    background-size: 100% 337px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: unset;
   }
@@ -1367,17 +1367,20 @@ header {
   border-radius: 1px;
 }  */
 
-@media not all and (min-resolution: 0.001dpcm) and (-webkit-min-device-pixel-ratio: 0) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .main-container {
-      background-attachment: unset;
-    }
-    .heading-service {
-      background-attachment: unset;
-      background-size: unset;
-      background-repeat: no-repeat;
-      background-position: unset;
-      height: 160px;
-    }
+.main-container.saf {
+  background-attachment: unset !important;
+}
+
+.heading-service.saf {
+  background-attachment: unset !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-container {
+    background-attachment: unset !important;
+  }
+
+  .heading-service {
+    background-attachment: unset !important;
   }
 }
