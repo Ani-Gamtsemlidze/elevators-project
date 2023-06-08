@@ -66,7 +66,7 @@ header {
   max-width: 122px;
   width: 100%;
   height: 48px;
-  margin: 30px 10px 0;
+  margin: 40px 0 40px;
 }
 
 .main-logo img {
@@ -89,8 +89,7 @@ header {
 }
 
 .navigation-bar {
-  margin-top: 30px;
-  margin-left: 120px;
+  margin: 55px 120px 55px;
 }
 
 .navigation-bar ul .li-list {
@@ -125,6 +124,7 @@ header {
   text-decoration: none;
   color: #232628;
   position: relative;
+  cursor: pointer;
 }
 
 .navigation-bar ul .li-list .service-arrow-image::before {
@@ -327,12 +327,13 @@ header {
   font-family: "BPG WEB 001 Caps", sans-serif;
   border-bottom: 1px solid #fdb417;
   color: #232628;
+  padding-bottom: 8px;
 }
 
 .about-content {
   max-width: 1026px;
   width: 100%;
-  padding: 24px 0 58px;
+  margin: 24px 0 58px;
 }
 
 .about-content p {
@@ -419,6 +420,7 @@ header {
   font-weight: 400;
   color: #232628;
   border-bottom: 1px solid #fdb417;
+  padding-bottom: 8px;
   transition: 0.3s ease;
 }
 
@@ -447,7 +449,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 7px;
   background-color: #f2f5fa;
 }
 
@@ -558,7 +559,7 @@ header {
     max-width: 81px;
     width: 100%;
     height: 32px;
-    margin: unset;
+    margin: 16px 21px 16px;
   }
 
   .main-logo img {
@@ -568,10 +569,10 @@ header {
     height: 100%;
   }
 
-  .menu-bar {
+  /* .menu-bar {
     display: block;
     position: relative;
-  }
+  } */
 
   .menu-bar img {
     width: 100%;
@@ -581,7 +582,7 @@ header {
   }
 
   .mobile-menu .mobile-close-click {
-    margin: 18px 22px;
+    margin: 16px 21px 16px;
     position: relative;
   }
 
@@ -596,7 +597,7 @@ header {
 
   .mobile-service-list {
     border-top: 1px solid #fff;
-    margin: 20% 27px;
+    margin: 17% 22px;
   }
 
   .mobile-service-list .mobile-texts {
@@ -966,6 +967,7 @@ header {
 
 .service-page-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .heading-service {
@@ -977,7 +979,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 56px 0 24px;
+  margin: unset;
   background-attachment: fixed;
 }
 
@@ -1007,7 +1009,7 @@ header {
 }
 
 .service-page-1 .page-1-text {
-  padding: 0 102px;
+  /* padding: 0 102px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1024,8 +1026,8 @@ header {
 }
 
 .service-page-1 .page-1-text .elevator-paragraph {
-  margin-top: 32px;
-  max-width: 578px;
+  margin-top: 24px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -1118,12 +1120,6 @@ header {
 }
 
 @media only screen and (max-width: 992px) {
-  .main-logo {
-    max-width: 81px;
-    width: 100%;
-    height: 32px;
-  }
-
   .main-logo img {
     -o-object-fit: contain;
     object-fit: contain;
@@ -1134,6 +1130,7 @@ header {
   .menu-bar {
     display: block;
     position: relative;
+    margin: 24px;
   }
 
   .menu-bar img {
@@ -1147,7 +1144,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 20px 20px 24px;
+    /* padding: 20px 20px 24px; */
   }
 
   .service-page-container {
@@ -1189,7 +1186,7 @@ header {
 
   .mobile-service-list {
     border-top: 1px solid #fff;
-    margin: 20% 27px;
+    margin: 17% 22px;
   }
 
   .mobile-service-list .mobile-texts {
@@ -1240,8 +1237,7 @@ header {
   .heading-service {
     background-image: url(../images/service-images/elevator-mobile.svg);
     height: 160px;
-    margin-bottom: 56px;
-    margin: unset;
+    margin-bottom: 32px;
     background-size: 100% 305px;
     background-repeat: no-repeat;
     background-position: unset;
