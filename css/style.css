@@ -152,7 +152,7 @@ header {
   visibility: hidden;
   width: 100px;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.2s ease-in;
 }
 
 #toggleMe {
@@ -204,19 +204,19 @@ header {
   position: relative;
   background-image: url(../images/cover.png);
   width: 100%;
-  /* height: calc(100vh - 77px); */
-  height: 100vh;
+  min-height: calc(100vh - 129px);
+  /* height: 100vh; */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 147px 0 24px;
 }
 
 .main-heading {
   max-width: 788px;
   width: 100%;
   color: #232628;
+  padding-top: 60px;
 }
 
 .main-heading h2 {
@@ -460,7 +460,7 @@ header {
 }
 
 .contact-info .contact {
-  margin: 22px 80px;
+  margin: 16px 80px;
   display: flex;
   align-items: center;
 }
@@ -534,17 +534,7 @@ header {
 }
 
 .num {
-  margin: 22px 0px;
-}
-
-.copy-text {
-  border-top: 1px solid #f2f5fa;
-  padding: 16px 102px;
-}
-
-.copy-text span {
-  font-size: 12px;
-  color: #475569;
+  margin: 16px 0;
 }
 
 @media only screen and (min-width: 992px) {
@@ -973,6 +963,7 @@ header {
 .service-page-container {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .heading-service {
@@ -1049,7 +1040,7 @@ header {
 .service-page-1 .page-1-image {
   width: 600px;
   height: 400px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .service-page-1 .page-1-image img {
@@ -1116,6 +1107,9 @@ header {
   padding: 7px 0 0;
 }
 
+#contact {
+  padding: 0;
+}
 .contact-footer {
   position: relative;
 }
