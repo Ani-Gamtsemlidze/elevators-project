@@ -508,10 +508,11 @@ header {
 
 .contact-footer {
   position: relative;
+  margin-top: 7px;
 }
 
 .contact-footer .contact {
-  padding: 12px 0px;
+  /* padding: 12px 0px; */
   display: flex;
   align-items: center;
 }
@@ -530,6 +531,10 @@ header {
 
 .contact-footer img {
   width: 20px;
+}
+
+.num {
+  margin: 22px 0px;
 }
 
 .copy-text {
