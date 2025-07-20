@@ -25,18 +25,32 @@ $(".mob_service_dropdown ").click(function (e) {
   $(this).toggleClass("active");
 });
 
-// var userAgent = window.navigator.userAgent;
+const questionHeaders = document.querySelectorAll(".question-header");
 
-// if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-//    // iPad or iPhone
+questionHeaders.forEach((header) => {
+  header.addEventListener("click", function () {
+    const questionItem = header.closest(".questions-content-item");
+    const answerText = questionItem.querySelector(".answer-text");
+    const icon = header.querySelector(".questions-icon");
+    const isActive = icon.classList.contains("active");
 
-//    $(".main-container").addClass("saf")
-//    $(".heading-service").addClass("saf")
-// }
+    questionHeaders.forEach((otherHeader) => {
+      if (otherHeader !== header) {
+        const otherItem = otherHeader.closest(".questions-content-item");
+        const otherAnswer = otherItem.querySelector(".answer-text");
+        const otherIcon = otherHeader.querySelector(".questions-icon");
+        otherIcon.classList.remove("active");
+        otherAnswer.style.display = "none";
+      }
+    });
 
-// if(navigator.userAgent.indexOf("Safari") != -1)
-//     {
+    icon.classList.toggle("active");
+    questionItem.classList.toggle("active");
 
-//    $(".main-container").addClass("saf")
-//    $(".heading-service").addClass("saf")
-//     }
+    if (!isActive) {
+      answerText.style.display = "block";
+    } else {
+      answerText.style.display = "none";
+    }
+  });
+});
